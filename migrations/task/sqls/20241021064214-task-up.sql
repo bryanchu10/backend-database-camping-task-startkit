@@ -377,7 +377,7 @@ inner join "CREDIT_PACKAGE" on "CREDIT_PACKAGE".id = "CREDIT_PURCHASE".credit_pa
 where
 	"CREDIT_PURCHASE".purchase_at >= '2024-11-01 00:00:00' and 
 	"CREDIT_PURCHASE".purchase_at <= '2024-11-30 23:59:59'
-group by "CREDIT_PACKAGE".id	
+group by "CREDIT_PACKAGE".id;
 
 -- 6-4. 查詢：計算 11 月份總營收（使用 purchase_at 欄位統計）
 -- 顯示須包含以下欄位： 總營收
